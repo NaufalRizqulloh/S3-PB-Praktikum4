@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        // Gmaps
         TextView locText = findViewById(R.id.text_view_loc);
         locText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Email
         TextView orderText = findViewById(R.id.text_view_order);
         orderText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +75,17 @@ public class MainActivity extends AppCompatActivity {
                 Intent launchEmailAppIntent = new Intent(Intent.ACTION_SENDTO);
                 launchEmailAppIntent.setData(Uri.parse("mailto:emailnopal@gmail.com"));
                 startActivity(launchEmailAppIntent);
+            }
+        });
+
+        // Nomor WA
+        TextView nomorWA = findViewById(R.id.text_view_nomorWA);
+        nomorWA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent launchWhatsAppIntent = new Intent(Intent.ACTION_VIEW);
+                launchWhatsAppIntent.setData(Uri.parse("https://wa.me/6281133305005"));
+                startActivity(launchWhatsAppIntent);
             }
         });
     }

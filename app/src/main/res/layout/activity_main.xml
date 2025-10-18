@@ -135,5 +135,18 @@
             android:id="@+id/text_view_order"
             />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_order"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Nomor Wa (PENS)"
+            android:textSize="10pt"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/green_200"
+            android:id="@+id/text_view_nomorWA"
+            />
+
     </RelativeLayout>
 </ScrollView>
