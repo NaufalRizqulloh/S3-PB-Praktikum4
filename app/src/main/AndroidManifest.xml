@@ -12,18 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Praktikum4">
         <activity
-            android:name=".StartersActivity"
-            android:label="Starters"
-            android:parentActivityName=".MainActivity"
+            android:name=".DessertsActivity"
             android:exported="false" />
+        <activity
+            android:name=".MenuMainsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartersActivity"
+            android:exported="false"
+            android:label="Starters"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.SENDTO" />
+
                 <data android:scheme="mailto" />
                 <data android:scheme="geo" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

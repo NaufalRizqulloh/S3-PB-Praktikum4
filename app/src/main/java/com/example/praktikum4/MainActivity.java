@@ -38,6 +38,22 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Mains Card
+        mainsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mainsActivityIntent = new Intent(MainActivity.this, MenuMainsActivity.class);
+                startActivity(mainsActivityIntent);
+            }
+        });
+
+        // Desserts Card
+        dessertsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent dessertsActivityIntent = new Intent(MainActivity.this, DessertsActivity.class);
+                startActivity(dessertsActivityIntent);
+            }
+        });
 
 
         TextView locText = findViewById(R.id.text_view_loc);
