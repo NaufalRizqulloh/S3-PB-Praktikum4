@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Kode Desain -->
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food and Menu"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/red_200"
+            android:id="@+id/text_view_namaresto"
+            />
+
+        <!-- Starters -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/card_view_starters">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kerupuk"
+                    android:id="@+id/image_view_starters"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Starters"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-black"
+                    android:id="@+id/text_view_starters"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- Mains -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view_starters"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:id="@+id/card_view_mains">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mieayam"
+                    android:id="@+id/image_view_mains"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Mains"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-black"
+                    android:id="@+id/text_view_mains"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- Desserts -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view_mains"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:id="@+id/card_view_desserts">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/eskrim"
+                    android:id="@+id/image_view_desserts"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Desserts"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif-black"
+                    android:id="@+id/text_view_desserts"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view_desserts"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Our Store"
+            android:textSize="10pt"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/text_view_loc"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_loc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Order Now"
+            android:textSize="10pt"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/text_view_order"
+            />
+
+    </RelativeLayout>
+</ScrollView>
